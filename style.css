@@ -1,0 +1,168 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Barrio", serif;
+}
+/* ------------------ Font ----------*/
+/*.barrio-regular {
+    font-family: "Barrio", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*/
+/* .roboto-<uniquifier> {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+} */
+
+/* ------------------ Generals  ----------*/
+
+body {
+    background-color: rgb(31, 154, 211);
+}
+
+h1 {
+    font-family: "Barrio", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 243, 239);
+    font-size: 100pt;
+}
+p {
+    color:  rgb(255, 243, 239);
+}
+/* ------------------ Galeria  ----------*/
+
+.hero  {
+    width: 100%;
+}
+.hero h1 {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px;
+}
+
+.hero p{
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-size: 18pt;
+    font-style: normal;
+    color:  rgb(255, 243, 239);
+    width: 80%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.memory-gallery {
+    font-size: 14pt;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat( 9 , 500px);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 20px;
+    width: auto; 
+    height: auto;
+    gap: 16px;
+
+}
+
+
+.item {
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+
+}
+
+.item p {
+    text-align: center;
+    padding: 20px;
+}
+
+.item1 {
+    background-image: url(Assets/Artboard\ 2.png);
+}
+.item2 {
+    background-image: url(Assets/Artboard\ 3.png);
+}
+.item3{
+    background-image: url(Assets/Artboard\ 1.png);
+}
+.item4{
+    background-image: url(Assets/Artboard\ 2.png);
+}
+.item5 {
+    background-image: url(Assets/Artboard\ 3.png);
+}
+.item6{
+    background-image: url(Assets/Artboard\ 1.png);
+}
+.item7{
+    background-image: url(Assets/pastalinda.png);
+}
+.item8 {
+    background-image: url(Assets/Artboard\ 3.png);
+}
+.item9{
+    background-image: url(Assets/Artboard\ 1.png);
+}
+.item10{
+    background-image: url(Assets/Artboard\ 3.png);
+}
+
+
+/* ------------------ Footer  ----------*/
+
+footer {
+    margin: 80px;
+    font-weight: 400;
+    font-size: 16pt;
+    font-style: normal;
+    text-align: center;
+    color:  rgb(255, 243, 239);
+}
+
+
+/* ------------------  media query Mobile ---------- */
+
+@media (min-width: 360px) {
+    h1 { font-size: 80pt;}
+    p { font-size: 16 pt;}
+    .memory-gallery {
+        grid-template-columns: 1fr ;
+    }
+
+}
+
+/* ------------------  media query tablet ---------- */
+@media (min-width: 600px) {
+    h1 { font-size: 80pt;}
+    p { font-size: 18 pt;}
+    .memory-gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5 , 500px);
+    }
+
+}
+
+/* ------------------  media query desktop ---------- */
+@media (min-width: 1024px) {
+    h1 { font-size: 140pt;}
+    p { font-size: 18 pt;}
+    .memory-gallery {
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: repeat(3 , 500px);
+    }
+
+}
+
